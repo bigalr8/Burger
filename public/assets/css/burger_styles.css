@@ -1,0 +1,83 @@
+#container {
+    display: block;
+    width: 960px; /* Without a width `auto` won’t work */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img
+  
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+  #burgerInput
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+  #devour{
+      float:right;
+  }
+  
+  #submit,
+  #lists
+  {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #title
+  {
+      color:red;
+      text-align: center
+      
+  }
+
+li,
+#instructs
+ {
+    text-align: center
+}
+
+#burgerInput {
+    margin:0 auto;
+}
+
+#submit {
+    
+    color:white;
+    background-color: #0662adf5;
+    margin:5px;
+}
+
+#leftTable {
+    float: left;
+}
+
+ #rightTable {
+    float: left;
+}
+
+#unEaten,
+#eaten {
+    background-color: white;
+    border-width: thin;
+    border-style: solid;
+    
+}
+#eaten {
+    opacity: 0.7;
+    height: 26px;
+    width:154px;
+}
+body {
+    background-color: #FFC107;
+}
