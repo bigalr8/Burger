@@ -1,7 +1,7 @@
-var mysql = require(connection);
+var connection = require("../config/connection.js");
 
 var orm = {
-    selectAll: function(tableOne) {
+    all: function(tableOne) {
         var queryString =
         "SELECT * from ??";
         //select * from ??burgers
@@ -18,7 +18,7 @@ var orm = {
 
 
 
-    insertOne: function(tableOne, tableOneCol, tableOneCol,valOfCol, valOfCol) {
+    create: function(tableOne, tableOneCol, tableOneCol,valOfCol, valOfCol) {
         var queryString =
         "INSERT INTO ?? (??, ??) VALUES (??, ??)";
         //insert into ??burgers (??burger_name,??devoured) values (??whatToInsert, ??"false")
@@ -34,7 +34,7 @@ var orm = {
     },
 
 
-    updateOne: function(tableOne, tableOneCol, valOfCol, tableOneCol, colToSearech, valOfCol) {
+    update: function(tableOne, tableOneCol, valOfCol, tableOneCol, colToSearech, valOfCol) {
         var queryString =
         "UPDATE ?? SET ?? = ?? WHERE ??.id = ??";
         //update ??burgers set ??devoured = ??"true" where ??burger.id = ??whatToUpdate
@@ -51,4 +51,4 @@ var orm = {
 
 };
 
-module.exports('orm');
+module.exports = orm;

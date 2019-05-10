@@ -1,5 +1,5 @@
 var express = require ('express');
-var burger = require ('burger.js)')
+var burger = require ('../models/burger.js')
 
 var router = express.Router();
  
@@ -43,4 +43,4 @@ router.put("/api/burgers/:id", function(req, res) {
 
  
 
-module.exports('router');
+module.exports = router;
