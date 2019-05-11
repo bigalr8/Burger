@@ -1,6 +1,7 @@
  
 $(function() {
     $(".change-devoured").on("click", function(event) {
+      console.log("change-devour-on-click");
       var id = $(this).data("id");
       var newDevoured = $(this).data("newDevoured");
   
@@ -21,10 +22,10 @@ $(function() {
       );
     });
   
-    $(".create-form").on("submit", function(event) {
+    $("#submit").on("submit", function(event) {
       
       event.preventDefault();
-  
+      console.log("change-form-on-submit");
       var newBurger = {
         name: $("#bu").val().trim(),
         devoured: 0 
